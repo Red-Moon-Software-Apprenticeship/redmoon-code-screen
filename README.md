@@ -1,9 +1,10 @@
 # redmoon-code-screen
+
 Code screen software for Red Moon Software Apprenticeship Program
 
 ## Project vision
 
-This project is intended to serve as a way for Red Moon to give it's students access to free and unlimited code screens.
+This project is intended to serve as a way for Red Moon to give its students access to free and unlimited code screens.
 
 Ideally, code screens could be done in all major programming languages, but this may require a separate project for each language (to be determined).
 
