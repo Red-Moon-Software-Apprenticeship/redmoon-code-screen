@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-bloodred: 0, 100%, 50%;
+  --secondary-midnight: 240, 100%, 0%;
+  --accent-silvermoon: 0, 0%, 75%;
+  --background-charcoal: 0, 0%, 20%;
+  --text-ivory: 60, 100%, 98%;
+}
+
+body {
+  margin: 0;
+}
+
+.full-screen-container {
+  background-image: url('red-moon.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  --color: hsl(var(--background-charcoal), 0.6);
+  background-color: var(--color);
+  box-shadow: 0 0 15px 0 var(--color);
+  padding: 40px 30px;
+  width: 40%;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 20px;
+}
+
+#form-title {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.form input {
+  font-size: 1.25rem;
+  padding: 0.5em;
+  background-color: hsl(var(--accent-silvermoon), 0.1);
+  color: var(--text-ivory);
+  outline: none;
+  border-radius: 0.1rem;
+  border: 1px solid hsl(var(--accent-silvermoon), 0.3);
+  height: 40px;
+}
+
+.form input::placeholder {
+  color: hsl(var(--text-ivory), 0.5);
+}
+
+.btn-field {
+  display: flex;
+  gap: 10px;
+}
+
+.form p {
+  text-align: left;
+  color: #999;
+  margin-top: 0;
+  font-size: 11px;
+}
+
+.form p a {
+  text-decoration: none;
+  color: var(--text-ivory);
+}
+
+.form p a:hover {
+  color: hsl(var(--text-ivory), 0.7);
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  color: var(--text-ivory);
+  background: hsl(var(--primary-bloodred));
+  height: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-field button:active {
+  transform: translateY(2px);
+  background: hsl(var(--primary-bloodred), 0.8);
+}
+
+.btn-field button:hover {
+  background: hsl(var(--primary-bloodred), 0.5);
+}
+
+.btn-field button.disabled {
+  background-color: hsl(var(--accent-silvermoon), 0.5);
+}
+
+.btn-field button.disabled:hover {
+  background-color: hsl(var(--accent-silvermoon), 0.3);
+}
