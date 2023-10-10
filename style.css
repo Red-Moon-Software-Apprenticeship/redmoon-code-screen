@@ -35,6 +35,7 @@ body {
   padding: 40px 30px;
   width: 40%;
   max-width: 600px;
+  min-width: 300px;
   border-radius: 20px;
 }
 
