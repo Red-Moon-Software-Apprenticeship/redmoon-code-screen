@@ -38,7 +38,7 @@ body {
   border-radius: 20px;
 }
 
-.form-title {
+#form-title {
   margin: 0;
   color: white;
   text-align: center;
@@ -58,6 +58,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
 }
 
 .form input {
